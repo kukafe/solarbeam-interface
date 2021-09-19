@@ -1,4 +1,4 @@
-import 'rc-slider/assets/index.css'
+// import 'rc-slider/assets/index.css'
 
 import React, { ReactNode } from 'react'
 import styled, { css } from 'styled-components'

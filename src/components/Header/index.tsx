@@ -88,6 +88,14 @@ function AppBar(): JSX.Element {
                           {i18n._(t`NFT Launchpad`)}
                         </a>
                       </NavLink>
+                      <NavLink href={'/analytics/home'}>
+                        <a
+                          id={`analytics-nav-link`}
+                          className="p-2 text-base text-primary hover:text-high-emphesis focus:text-high-emphesis md:p-3 whitespace-nowrap"
+                        >
+                          {i18n._(t`Analytics`)}
+                        </a>
+                      </NavLink>
                     </div>
                   </div>
                 </div>
@@ -207,6 +215,11 @@ function AppBar(): JSX.Element {
                 <Link href={'/nft/launchpad'}>
                   <a className="p-2 text-baseline text-primary hover:text-high-emphesis focus:text-high-emphesis md:p-3 whitespace-nowrap">
                     {i18n._(t`NFT Launchpad`)}
+                  </a>
+                </Link>
+                <Link href={'/analytics/home'}>
+                  <a className="p-2 text-baseline text-primary hover:text-high-emphesis focus:text-high-emphesis md:p-3 whitespace-nowrap">
+                    {i18n._(t`Analytics`)}
                   </a>
                 </Link>
               </div>

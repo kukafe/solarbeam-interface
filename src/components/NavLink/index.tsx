@@ -8,7 +8,7 @@ const NavLink = ({ children, exact = false, activeClassName = 'text-high-emphesi
   const child = Children.only(children)
   const childClassName = child.props.className || ''
 
-  // pages/index.js will be matched via props.href
+  // pages/analyticsCSS.js will be matched via props.href
   // pages/about.js will be matched via props.href
   // pages/[slug].js will be matched via props.as
 

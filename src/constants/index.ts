@@ -4,6 +4,8 @@ import { binance, fortmatic, injected, portis, torus, walletconnect, walletlink 
 import { AbstractConnector } from '@web3-react/abstract-connector'
 import { BigNumber } from 'ethers'
 
+export const BUNDLE_ID = '1'
+
 export const RPC = {
   [ChainId.MAINNET]: 'https://eth-mainnet.alchemyapi.io/v2/q1gSNoSMEzJms47Qn93f9-9Xg5clkmEC',
   [ChainId.ROPSTEN]: 'https://eth-ropsten.alchemyapi.io/v2/cidKix2Xr-snU3f6f6Zjq_rYdalKKHmW',
@@ -287,3 +289,43 @@ export const EIP_1559_ACTIVATION_BLOCK: { [chainId in ChainId]?: number } = {
 export * from './routing'
 export * from './addresses'
 export * from './tokens'
+
+
+export const timeframeOptions = {
+  WEEK: '1 week',
+  MONTH: '1 month',
+  // THREE_MONTHS: '3 months',
+  // YEAR: '1 year',
+  HALF_YEAR: '6 months',
+  ALL_TIME: 'All time',
+}
+
+// token list urls to fetch tokens from - use for warnings on tokens and pairs
+export const SUPPORTED_LIST_URLS__NO_ENS = [
+  'https://gateway.ipfs.io/ipns/tokens.uniswap.org',
+  'https://www.coingecko.com/tokens_list/uniswap/defi_100/v_0_0_0.json',
+]
+// pair blacklist
+export const PAIR_BLACKLIST = [
+  '0xb6a741f37d6e455ebcc9f17e2c16d0586c3f57a5',
+  '0x97cb8cbe91227ba87fc21aaf52c4212d245da3f8',
+  '0x1acba73121d5f63d8ea40bdc64edb594bd88ed09',
+  '0x7d7e813082ef6c143277c71786e5be626ec77b20',
+]
+
+// hide from overview list
+export const TOKEN_BLACKLIST = [
+  '0x495c7f3a713870f68f8b418b355c085dfdc412c3',
+  '0xc3761eb917cd790b30dad99f6cc5b4ff93c4f9ea',
+  '0xe31debd7abff90b06bca21010dd860d8701fd901',
+  '0xfc989fbb6b3024de5ca0144dc23c18a063942ac1',
+  '0xf4eda77f0b455a12f3eb44f8653835f377e36b76',
+  '0x93b2fff814fcaeffb01406e80b4ecd89ca6a021b',
+
+  // rebass tokens
+  '0x9ea3b5b4ec044b70375236a281986106457b20ef',
+  '0x05934eba98486693aaec2d00b0e9ce918e37dc3f',
+  '0x3d7e683fc9c86b4d653c9e47ca12517440fad14e',
+  '0xfae9c647ad7d89e738aba720acf09af93dc535f7',
+  '0x7296368fe9bcb25d3ecc19af13655b907818cc09',
+]
