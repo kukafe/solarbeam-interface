@@ -209,6 +209,10 @@ msgstr "已添加"
 #~ msgid "Additional records and weekly merkle updates can be found on"
 #~ msgstr ""
 
+#: src/features/farm/FarmMenu.tsx:30
+msgid "All Farms"
+msgstr ""
+
 #: src/features/farm/FarmList.tsx:55
 #: src/features/vault/VaultList.tsx:15
 msgid "Allocation"
@@ -230,10 +234,9 @@ msgstr "移除数量"
 msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note fee on transfer and rebase tokens are incompatible with Uniswap V3."
 msgstr "在试图执行该交换时发生了错误。你可能需要增加你的滑点容忍度。如果这不起作用，可能与你交易的代币不兼容。注意转移和重新安置代币的费用与Uniswap V3不兼容。"
 
-#: src/components/Header/index.tsx:96
-#: src/components/Header/index.tsx:222
-msgid "Analytics"
-msgstr "分析界面"
+#: src/components/Header/index.tsx:99
+#~ msgid "Analytics"
+#~ msgstr "分析界面"
 
 #: src/features/farm/FarmListItemDetails.tsx:129
 #: src/features/lending/Button.tsx:64
@@ -375,7 +378,7 @@ msgstr "余额"
 #~ msgstr "借款让您在不出售资产的情况下获得流动性。您的借款上限取决于您抵押物的价值。您可以借出您抵押品价值的75%，随时可以还款，并附上利息。"
 
 #: src/components/Header/index.tsx:72
-#: src/components/Header/index.tsx:207
+#: src/components/Header/index.tsx:199
 #: src/pages/bridge/history/index.tsx:227
 #: src/pages/bridge/history/index.tsx:247
 #: src/pages/bridge/index.tsx:390
@@ -811,12 +814,12 @@ msgid "Expired"
 msgstr "过期"
 
 #: src/components/Header/index.tsx:51
-#: src/components/Header/index.tsx:186
+#: src/components/Header/index.tsx:178
 msgid "Farm"
 msgstr "农耕"
 
 #: src/components/Header/index.tsx:80
-#: src/components/Header/index.tsx:212
+#: src/components/Header/index.tsx:204
 msgid "Faucet"
 msgstr ""
 
@@ -1145,7 +1148,7 @@ msgstr "了解更多关于钱包的信息"
 #~ msgid "Limit order"
 #~ msgstr ""
 
-#: src/pages/analytics/home/index.tsx:108
+#: src/components/ExchangeHeader.tsx:70
 #~ msgid "Liquidity"
 #~ msgstr "流动性"
 
@@ -1209,7 +1212,7 @@ msgid "Lock"
 msgstr "锁定"
 
 #: src/components/Header/index.tsx:67
-#: src/components/Header/index.tsx:202
+#: src/components/Header/index.tsx:194
 msgid "Locker"
 msgstr "锁"
 
@@ -1339,6 +1342,10 @@ msgstr "最少可获得的数量"
 msgid "Moonriver Faucet"
 msgstr ""
 
+#: src/features/farm/FarmMenu.tsx:31
+msgid "My Farms"
+msgstr ""
+
 #: src/pages/exchange/pool/index.tsx:117
 msgid "My Liquidity Positions"
 msgstr "我的流动性仓位"
@@ -1352,7 +1359,7 @@ msgstr "我的订单"
 #~ msgstr ""
 
 #: src/components/Header/index.tsx:88
-#: src/components/Header/index.tsx:217
+#: src/components/Header/index.tsx:209
 msgid "NFT Launchpad"
 msgstr "NFT Launchpad"
 
@@ -1438,7 +1445,7 @@ msgstr "打开订单"
 #~ msgid "Open Source"
 #~ msgstr "开源"
 
-#: src/components/Header/index.tsx:130
+#: src/components/Header/index.tsx:122
 msgid "Open main menu"
 msgstr "打开主菜单"
 
@@ -1483,14 +1490,6 @@ msgstr "输出将发送到"
 #~ msgid "Output will be sent to <0>{0}</0>"
 #~ msgstr "输出将发送到<0> {0} </0>"
 
-#: src/components/SideNav/index.js:131
-#~ msgid "Overview"
-#~ msgstr ""
-
-#: src/components/SideNav/index.js:167
-#~ msgid "Pairs"
-#~ msgstr ""
-
 #: src/features/open-order/CompletedOrders.tsx:35
 #: src/features/open-order/OpenOrders.tsx:63
 msgid "Pay"
@@ -1529,7 +1528,7 @@ msgid "Please type the word \"confirm\" to {0} and lock your tokens for {1}."
 msgstr ""
 
 #: src/components/Header/index.tsx:43
-#: src/components/Header/index.tsx:178
+#: src/components/Header/index.tsx:170
 #: src/pages/exchange/pool/index.tsx:95
 msgid "Pool"
 msgstr "资金池"
@@ -1927,7 +1926,7 @@ msgstr "提供{0} {1}和{2} {3}"
 
 #: src/components/ExchangeHeader.tsx:42
 #: src/components/Header/index.tsx:35
-#: src/components/Header/index.tsx:170
+#: src/components/Header/index.tsx:162
 #: src/pages/exchange/swap/[[...tokens]].tsx:569
 #: src/pages/exchange/swap/[[...tokens]].tsx:598
 msgid "Swap"
@@ -2214,7 +2213,7 @@ msgstr "解开"
 #~ msgstr "V2奖励器"
 
 #: src/components/Header/index.tsx:59
-#: src/components/Header/index.tsx:194
+#: src/components/Header/index.tsx:186
 msgid "Vaults"
 msgstr ""
 
@@ -2280,10 +2279,6 @@ msgstr "在区块浏览器上查看交易"
 #: src/pages/SushiBar/legacy/index.tsx:34
 #~ msgid "View your SushiBar Portfolio"
 #~ msgstr "查看您的SushiBar组合"
-
-#: src/pages/analytics/home/index.tsx:119
-#~ msgid "Volume"
-#~ msgstr ""
 
 #: src/modals/TransactionConfirmationModal/index.tsx:42
 msgid "Waiting for Confirmation"
@@ -2637,8 +2632,6 @@ msgstr "{0}/{1} 销毁"
 msgid "{label}"
 msgstr ""
 
-#: src/components/AnalyticsItem/index.js:12
-#: src/components/MenuAnalytics/index.js:69
-#: src/features/farm/FarmMenu.tsx:19
-msgid "{title}"
-msgstr "{标题}"
+#: src/features/farm/FarmMenu.tsx:18
+#~ msgid "{title}"
+#~ msgstr "{标题}"
